@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Palanquin:400,200,300,500,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
 
 /*************************
@@ -6,7 +6,7 @@
 **************************/
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Palanquin", sans-serif;
   font-size: 17px;
   color: #fff;
 }
@@ -103,13 +103,13 @@ h2 {
 }
 
 .navbar-brand {
-  background-color: rgba(153, 26, 29, 0.7);
+  background-color: rgba(34, 34, 34, 0.74);
   /* background-color: rgba(0,0,0,0.7); */
   /* background-color: rgba(255, 255, 255, 0.7); */
   height: 90px;
   margin-bottom: 20px;
   position: relative;
-  width: 297px;
+  width: 150px;
 }
 
 /* .navbar-brand img {
@@ -444,7 +444,7 @@ h2 {
 **************************/
 
 #about {
-  background-color: #75b46e;
+  background-color: #302f34;
   position: relative;
   width: 100%;
   display: flex;
@@ -474,11 +474,11 @@ h2 {
 
 .about-content p {
   font-size: 17px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Palanquin", sans-serif;
 }
 
 #about .btn-primary {
-  background-color: #137c61;
+  background-color: #302f34;
   color: #fff;
   text-transform: capitalize;
   border: none;
@@ -486,14 +486,40 @@ h2 {
 }
 
 #about .btn-primary:hover {
-  background-color: #126d55;
+  background-color: #302f34;
 }
 
+/*************************
+******Audition CSS****
+**************************/
+
+#audition {
+  background-color: #cccccc;
+  background-image: url("../images/audition-bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20px 0 0px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.ff-title {
+  font-family: "Yanone Kaffeesatz", "sans-serif";
+  font-weight: normal;
+  font-size: large;
+}
+
+.ff-powered-img {
+  display: none !important;
+  visibility: hidden;
+}
 /*************************
 ******Twitter CSS****
 **************************/
 
-#twitter {
+#socials {
   background-color: #ecedef;
   background-image: url("../images/twitter-bg.jpg");
   background-position: center bottom;
@@ -510,11 +536,11 @@ h2 {
   top: -42%;
 }
 
-#twitter-feed .item {
+#socials-feed .item {
   text-align: center;
 }
 
-#twitter-feed .item img {
+#socials-feed .item img {
   display: inline-block;
   width: 78px;
   height: 78px;
@@ -524,18 +550,18 @@ h2 {
   margin-bottom: 30px;
 }
 
-#twitter-feed .item a,
-#twitter-feed .item p {
+#socials-feed .item a,
+#socials-feed .item p {
   font-size: 24px;
   font-weight: 300;
   font-family: "Yanone Kaffeesatz", "sans-serif";
 }
 
-#twitter-feed .item p {
+#socials-feed .item p {
   color: #3d3d3d;
 }
 
-#twitter-feed .item a {
+#socials-feed .item a {
   color: #00c3ff;
 }
 
@@ -613,17 +639,6 @@ h2 {
 
 .sponsor-control-right {
   right: 10%;
-}
-
-/*************************
-******Map CSS****
-**************************/
-#map {
-  position: relative;
-}
-
-#gmap {
-  height: 450px;
 }
 
 /*************************
@@ -726,4 +741,127 @@ h2 {
 
 #footer a:hover {
   color: #880000;
+}
+
+/* 
+********************************************************
+SOCIALS 
+********************************************************
+*/
+
+socials {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+socials:focus,
+socials:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.wrapper a {
+  text-align: center;
+}
+.wrapper a p {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
 }

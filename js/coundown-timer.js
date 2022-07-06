@@ -19,7 +19,6 @@
     function countdown_proc() {
       eventDate = Date.parse(settings["date"]) / 1000;
       currentDate = Math.floor($.now() / 1000);
-      console.log($.now());
 
       if (eventDate <= currentDate) {
         callback.call(this);

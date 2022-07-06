@@ -13,9 +13,15 @@
     $email_from = $email;
     $email_to = 'gaismainc@gmail.com';//replace with your email
 
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
+    // $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
+    // $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
 
-    echo json_encode($status);
-    die;
+
+    if(mail($email_to, $subject, $message)){
+    echo 'Your message has been sent successfully.';
+} else{
+    echo 'Unable to send message. Please try again.';
+}
+
+?>
