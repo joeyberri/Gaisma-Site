@@ -11,6 +11,8 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script src="js/countdown-timer.js"></script>
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -64,7 +66,11 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html">
-                <img class="img-responsive" src="images/logo.png" alt="logo" />
+                <img
+                  class="img-responsive"
+                  src="./images/logo.jpg"
+                  alt="Gaisma Inc"
+                />
               </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -148,35 +154,35 @@
             <img class="img-responsive" src="images/watch.png" alt="" />
           </div>
           <div class="col-md-4 col-md-offset-2 col-sm-5">
-            <h2>our next event is on</h2>
+            <h2>our next event is in</h2>
           </div>
           <div class="col-sm-7 col-md-6">
             <ul id="countdown">
               <li>
-                <span class="days time-font">07</span>
-                <p>7th</p>
+                <span id="timeRefDays" class="days time-font">07</span>
+                <p>DAYS</p>
               </li>
               <li>
-                <span class="hours time-font">07</span>
-                <p class="">July</p>
+                <span id="timeRefHours" class="hours time-font">07</span>
+                <p class="">HOURS</p>
               </li>
               <li>
-                <span class="minutes time-font">22</span>
-                <p class="">2022</p>
+                <span id="timeRefMinutes" class="minutes time-font">22</span>
+                <p class="">MINUTES</p>
               </li>
-              <!-- <li>
-                <span class="seconds time-font">00</span>
-                
-              </li> -->
+              <li>
+                <span id="timeRefSeconds" class="seconds time-font">00</span>
+                <p class="">SECONDS</p>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="cart">
+        <!-- <div class="cart">
           <a href="#"
             ><i class="fa fa-shopping-cart"></i>
             <span>Purchase Tickets</span></a
           >
-        </div>
+        </div> -->
       </div>
     </section>
     <!--/#explore-->
@@ -496,15 +502,14 @@
     <!--/#twitter-feed-->
 
     <!-- audition -->
-    <section id="audition">
+    <section id="audition" style="color: #444">
       <div>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfj6TF10v4NmWNk_6KB8YnHZVf_KDHtDQ18RYxT9gXs6-ANyA/viewform?embedded=true"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
+        <div class="container" id="ff-compose"></div>
+        <script
+          async
+          defer
+          src="https://formfacade.com/include/100112677265160282152/form/1FAIpQLSfj6TF10v4NmWNk_6KB8YnHZVf_KDHtDQ18RYxT9gXs6-ANyA/bootstrap.js?div=ff-compose"
+        ></script>
       </div>
     </section>
 

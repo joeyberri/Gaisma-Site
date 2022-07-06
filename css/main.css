@@ -1,12 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
 
 /*************************
 *******Typography******
 **************************/
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 17px;
   color: #fff;
 }
@@ -105,18 +105,18 @@ h2 {
 .navbar-brand {
   background-color: rgba(153, 26, 29, 0.7);
   /* background-color: rgba(0,0,0,0.7); */
-  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(255, 255, 255, 0.7); */
   height: 90px;
   margin-bottom: 20px;
   position: relative;
   width: 297px;
 }
 
-.navbar-brand img {
+/* .navbar-brand img {
   position: absolute;
   top: -50px;
   padding: 45px;
-}
+} */
 
 .navbar-right {
   background-color: #880000cc;
@@ -474,7 +474,7 @@ h2 {
 
 .about-content p {
   font-size: 17px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #about .btn-primary {
