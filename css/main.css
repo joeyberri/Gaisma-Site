@@ -4,6 +4,13 @@
 /*************************
 *******Typography******
 **************************/
+button,
+.btn {
+  border-radius: 10px !important;
+  border: none !important;
+  outline: none !important;
+  background-color: #880100;
+}
 
 body {
   font-family: "Palanquin", sans-serif;

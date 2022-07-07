@@ -1,9 +1,9 @@
 <?php
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Thank you for contacting us. We will be in touch with you very soon '
-	);
+	// header('Content-type: application/json');
+	// $status = array(
+	// 	'type'=>'success',
+	// 	'message'=>'Thank you for contacting us. We will be in touch with you very soon '
+	// );
 
     $name = @trim(stripslashes($_POST['name'])); 
     $email = @trim(stripslashes($_POST['email'])); 
@@ -23,5 +23,6 @@
 } else{
     echo 'Unable to send message. Please try again.';
 }
+
 
 ?>
