@@ -7,7 +7,6 @@
 
     $name = @trim(stripslashes($_POST['name'])); 
     $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
     $message = @trim(stripslashes($_POST['message'])); 
 
     $email_from = $email;
@@ -18,7 +17,7 @@
     // $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
 
 
-    if(mail($email_to, $subject, $message)){
+    if(mail($email_to, "From Gaisma Inc Website", $message)){
     echo 'Your message has been sent successfully.';
 } else{
     echo 'Unable to send message. Please try again.';

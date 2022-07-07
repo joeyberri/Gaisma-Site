@@ -6,10 +6,15 @@
 **************************/
 button,
 .btn {
-  border-radius: 10px !important;
+  border-radius: 5px !important;
   border: none !important;
   outline: none !important;
   background-color: #880100;
+}
+
+input,
+textarea {
+  border-radius: 5px !important;
 }
 
 body {
