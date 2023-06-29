@@ -4,10 +4,10 @@
     thisEl = $(countdown);
 
     //array of custom settings
-    var settings = {
-      date: null,
-      format: null,
-    };
+var settings = {
+  date: "December 24, 2023 16:00:00",
+  format: null,
+};
 
     var interval = 1;
     //append the settings array to options
