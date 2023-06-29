@@ -5,7 +5,7 @@
 
     //array of custom settings
 var settings = {
-  date: "December 24, 2023 16:00:00",
+  date: null,
   format: null,
 };
 
